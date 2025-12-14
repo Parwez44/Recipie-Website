@@ -408,7 +408,7 @@ img {
 }
 
 .recipe-footer {
-  margin-top: 0.5rem;
+  margin-top: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -993,4 +993,5 @@ img {
 section {
   scroll-margin-top: 80px;
 }
+
 
