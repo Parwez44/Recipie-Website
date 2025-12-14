@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PK's Recipe - Fresh Recipe Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="recipiefin.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">PK's Recipe</div>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Cook Fresh, Eat Green, Live Better.</h1>
+          <p>
+            Discover simple, healthy recipes crafted to keep your plate colorful,
+            your body nourished, and your taste buds happy.
+          </p>
+          <button id="explore-recipes-btn" class="btn primary-btn">
+            Explore Recipes
+          </button>
+        </div>
+        <div class="hero-image">
+          <!-- Placeholder “chef” illustration -->
+          <div class="chef-illustration">
+            <!-- <div class="chef-hat"></div>
+            <div class="chef-body"> -->
+                <img src="images/cook.png" alt="">
+              <!--  -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="section">
+      <div class="section-header">
+        <h2>Our Recipes</h2>
+        <p>Find something tasty and wholesome in a few clicks.</p>
+      </div>
+
+      <div class="recipe-controls">
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="recipe-search"
+            placeholder="Search recipes by name..."
+            aria-label="Search recipes"
+          />
+        </div>
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="veg">Veg</button>
+          <button class="filter-btn" data-filter="non-veg">Non-Veg</button>
+          <button class="filter-btn" data-filter="salad">Salad</button>
+          <button class="filter-btn" data-filter="dessert">Dessert</button>
+        </div>
+      </div>
+
+      <div id="recipe-grid" class="recipe-grid">
+        <!-- Cards populated by script.js -->
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section section-alt">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>Support for your healthy lifestyle, one plate at a time.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon">🥗</div>
+          <h3>Personal Diet Plans</h3>
+          <p>
+            Tailored meal plans designed around your goals, preferences, and
+            daily routine.
+          </p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">📅</div>
+          <h3>Weekly Meal Prep Guidance</h3>
+          <p>
+            Step-by-step prep strategies so you eat healthy, even on your
+            busiest days.
+          </p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">🎥</div>
+          <h3>Online Cooking Classes</h3>
+          <p>
+            Live and recorded classes that teach you quick, delicious, and
+            nutritious recipes.
+          </p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">🧾</div>
+          <h3>Custom Healthy Menus</h3>
+          <p>
+            Menus curated for events, families, and workplaces that want to
+            serve better food.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2>About PK's Recipe</h2>
+        <p>We believe great food can be simple, fresh, and planet-friendly.</p>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-image">
+          <div class="about-illustration">
+            <div class="about-plate">
+              <span>🥦</span>
+              <span>🥑</span>
+              <span>🍅</span>
+            </div>
+            <p>Powered by greens and good vibes.</p>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            PK's Recipe started with a simple idea: make healthy cooking feel
+            less like a chore and more like a daily celebration. We focus on
+            easy-to-follow recipes using fresh, accessible ingredients, so
+            anyone can cook confidently at home.
+          </p>
+          <h3>Our Mission</h3>
+          <ul class="mission-list">
+            <li>Promote fresh, healthy eating for all lifestyles.</li>
+            <li>Make cooking fun, simple, and stress-free.</li>
+            <li>Support seasonal and sustainable ingredients.</li>
+            <li>Inspire mindful, joyful eating habits.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section section-alt">
+      <div class="section-header">
+        <h2>What Our Food Lovers Say</h2>
+        <p>Real words from people who cook with us.</p>
+      </div>
+
+      <div class="testimonial-slider">
+        <div class="testimonial-track">
+          <article class="testimonial active">
+            <p class="testimonial-text">
+              “PK's Recipe helped me fall in love with cooking again. The recipes
+              are simple and always turn out great.”
+            </p>
+            <p class="testimonial-name">— Aditi, Student</p>
+          </article>
+          <article class="testimonial">
+            <p class="testimonial-text">
+              “As a busy professional, the meal prep guidance has been a
+              lifesaver. I eat better and save time.”
+            </p>
+            <p class="testimonial-name">— Rohan, Developer</p>
+          </article>
+          <article class="testimonial">
+            <p class="testimonial-text">
+              “The veg and salad recipes are so vibrant and tasty. My family
+              actually asks for more greens now!”
+            </p>
+            <p class="testimonial-name">— Meera, Homemaker</p>
+          </article>
+          <article class="testimonial">
+            <p class="testimonial-text">
+              “The online classes are super friendly and practical. I’ve learned
+              so many quick healthy dishes.”
+            </p>
+            <p class="testimonial-name">— Arjun, Entrepreneur</p>
+          </article>
+        </div>
+
+        <div class="testimonial-controls">
+          <button class="testimonial-nav prev" aria-label="Previous testimonial">
+            ‹
+          </button>
+          <div class="testimonial-dots">
+            <button class="dot active" data-index="0" aria-label="Show testimonial 1"></button>
+            <button class="dot" data-index="1" aria-label="Show testimonial 2"></button>
+            <button class="dot" data-index="2" aria-label="Show testimonial 3"></button>
+            <button class="dot" data-index="3" aria-label="Show testimonial 4"></button>
+          </div>
+          <button class="testimonial-nav next" aria-label="Next testimonial">
+            ›
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>Have a question or idea? We’d love to hear from you.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required />
+            <p class="error-message" id="name-error"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required />
+            <p class="error-message" id="email-error"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <p class="error-message" id="message-error"></p>
+          </div>
+
+          <button type="submit" class="btn primary-btn full-width">
+            Send Message
+          </button>
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo">PK's Recipe</div>
+        <p>Fresh ideas for greener plates.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/parwez044/" href="javascript:void(0)" aria-label="Instagram">📸</a>
+          <a href="javascript:void(0)" aria-label="Twitter">🐦</a>
+          <a href="javascript:void(0)" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> PK's Recipe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Recipe Modal -->
+  <div id="recipe-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close recipe">&times;</button>
+      <div class="modal-body">
+        <div class="modal-image-wrapper">
+          <img id="modal-image" src="" alt="Recipe image" />
+        </div>
+        <div class="modal-details">
+          <h3 id="modal-title"></h3>
+          <p id="modal-meta" class="modal-meta"></p>
+
+          <div class="modal-section">
+            <h4>Ingredients</h4>
+            <ul id="modal-ingredients"></ul>
+          </div>
+
+          <div class="modal-section">
+            <h4>Steps</h4>
+            <ol id="modal-steps"></ol>
+          </div>
+
+          <div class="modal-section tip-section">
+            <h4>Chef’s Tip</h4>
+            <p id="modal-tip"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    ↑
+  </button>
+
+  <script src="recipiefin.js" ></script>
+</body>
+</html>
